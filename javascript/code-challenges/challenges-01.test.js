@@ -84,12 +84,14 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr, value) => {
-  // Solution code here...
-};
+const addValues = (arr, value) => arr.push(value);
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  while (times > 0){
+    callback(arr,num);
+    times--;
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
