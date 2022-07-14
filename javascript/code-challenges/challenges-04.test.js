@@ -104,7 +104,16 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    if (a.charCodeAt(0) < b.charCodeAt(0)){
+      return -1;
+    } else if (a.charCodeAt(0) === b.charCodeAt(0)){
+      return 0;
+    } else {
+      return 1;
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -121,7 +130,16 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    if (a.price > b.price){
+      return 1;
+    } else if (a.price === b.price){
+      return 0;
+    } else {
+      return -1;
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
