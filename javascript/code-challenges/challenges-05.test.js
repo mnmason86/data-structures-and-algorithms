@@ -125,7 +125,11 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  let namesOnly = arr.reduce((charName, element) => {
+    charName.push(element.name);
+    return charName;
+  }, []);
+  return namesOnly;
 };
 
 /* ------------------------------------------------------------------------------------------------
