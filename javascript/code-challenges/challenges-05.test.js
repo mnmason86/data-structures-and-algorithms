@@ -46,7 +46,11 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  // Solution code here...
+  let costSum = arr.reduce((currentSum, element) => {
+    currentSum = element.purchasePrice + currentSum;
+    return currentSum;
+  }, 0);
+  return costSum;
 };
 
 /* ------------------------------------------------------------------------------------------------
