@@ -131,7 +131,12 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  for (let i = 0; i < arr.length; i++){
+    let character = arr[i];
+    let obj = Object.values(character);
+    let name = obj.pop();
+    houses.push(name);
+  }
   return houses;
 };
 
