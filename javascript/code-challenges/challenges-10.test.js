@@ -28,7 +28,15 @@ For example:
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
-  // Solution code here...
+  let max = 0;
+  matrix.forEach(element => {
+    element.forEach(int => {
+      if (int > max){
+        max = int;
+      }
+    });
+  });
+  return max;
 };
 
 /* ------------------------------------------------------------------------------------------------
