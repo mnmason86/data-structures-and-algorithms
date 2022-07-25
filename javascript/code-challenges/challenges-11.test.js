@@ -36,7 +36,14 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+  let total = 0;
+  for(let i = 0; i < input.length; i++){
+    let smArr = input[i];
+    let totalArr = smArr.filter(int =>
+      int === target);
+    total += totalArr.length;
+  }
+  return total;
 };
 
 /* ------------------------------------------------------------------------------------------------
