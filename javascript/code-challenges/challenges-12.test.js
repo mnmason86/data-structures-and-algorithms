@@ -90,7 +90,7 @@ Return either true or false.
 const validatePhoneNumber = (phoneNumber) => {
   return (/^(\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/).test(phoneNumber);
 };
-
+ 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
