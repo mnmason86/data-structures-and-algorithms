@@ -65,7 +65,11 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  let splitString = str.split('');
+  let oddChars = splitString.filter((char, index) =>
+    index % 2 === 1
+  );
+  return oddChars.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
