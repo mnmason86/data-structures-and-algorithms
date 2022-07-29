@@ -59,7 +59,7 @@ let starWarsData = [{
   birth_year: '112BBY',
   gender: 'n/a'
 },
-{
+{ 
   name: 'R2-D2',
   height: '96',
   mass: '32',
