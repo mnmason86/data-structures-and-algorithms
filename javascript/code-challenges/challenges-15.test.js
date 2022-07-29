@@ -59,7 +59,7 @@ let starWarsData = [{
   birth_year: '112BBY',
   gender: 'n/a'
 },
-{ 
+{
   name: 'R2-D2',
   height: '96',
   mass: '32',
@@ -138,7 +138,7 @@ const sortBy = (property, arr) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 5 
+CHALLENGE 5
 
 Write a function that determines if a given URL is secure, beginning with https://
 
@@ -158,7 +158,7 @@ const isSecure = (url) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 6 
+CHALLENGE 6
 
 Write a function named detectTicTacToeWin that accepts a two-dimensional array of strings. Each string is guaranteed to be either "X", "O" or an empty string. Your function should check to see if any row, column, or either diagonal direction has three matching "X" or "O" symbols (non-empty strings), three-in-a-line.
 
@@ -177,7 +177,7 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  let helpCheck = 
+
 };
 
 /* ------------------------------------------------------------------------------------------------
