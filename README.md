@@ -2,4 +2,5 @@
 
 **Table of Contents**
 
-[ArrayReverse](/java/ArrayReverse/README.md)
+[Array Reverse](/java/ArrayReverse/README.md)
+[Array Insert Shift](/java/ArrayInsertShift/README.md)
