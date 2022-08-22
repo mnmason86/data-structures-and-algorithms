@@ -46,4 +46,55 @@ public class LinkedListTest
     boolean includesResult2 = LL.includes(8);
     assertFalse(includesResult2);
    }
+
+   @Test void append(){
+    LinkedList<Integer> LL = new LinkedList<>();
+    LL.insert(4);
+     LL.insert(9);
+     LL.insert(0);
+     LL.insert(12);
+
+     LL.append(2);
+
+     assertTrue(LL.includes(2));
+   }
+
+   @Test void insertBefore() {
+    LinkedList<Integer> LL = new LinkedList<>();
+     LL.insert(4);
+     LL.insert(9);
+     LL.insert(0);
+     LL.insert(12);
+
+     LL.insertBefore(4,5);
+
+     String stringTest = LL.toString();
+     assertTrue(stringTest.contains("{ 5 } -> { 4 }"));
+
+   }
+
+   @Test void insertAfter() {
+    LinkedList<Integer> LL = new LinkedList<>();
+     LL.insert(4);
+     LL.insert(9);
+     LL.insert(0);
+     LL.insert(12);
+
+     LL.insertAfter(12, 8);
+
+     String stringTest = LL.toString();
+     assertTrue(stringTest.contains("{ 12 } -> { 8 }"));
+   }
+
+   @Test void delete() {
+     LinkedList<Integer> LL = new LinkedList<>();
+     LL.insert(4);
+     LL.insert(9);
+     LL.insert(0);
+     LL.insert(12);
+
+     LL.delete(0);
+
+     assertFalse(LL.includes(0));
+   }
 }
