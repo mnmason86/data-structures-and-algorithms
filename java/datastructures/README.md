@@ -15,3 +15,4 @@ Methods:
 
 `toString()` = (Override) Returns a string representing all the values in the Linked List
 
+`append()` = Adds a node with the given value to the end of the Linked List.

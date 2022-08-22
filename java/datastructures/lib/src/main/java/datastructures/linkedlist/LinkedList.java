@@ -32,4 +32,30 @@ public class LinkedList<LL> {
         }
         return output + "NULL";
     }
+
+    public void append(LL value){
+      Node<LL> newTail = new Node<>(value);
+
+      if (head == null){
+        newTail.next = null;
+        head = newTail;
+      } else {
+        Node<LL> current = head;
+        while (current.next != null){
+          current = current.next;
+        }
+        current.next = newTail;
+        newTail.next = null;
+      }
+    }
+
+    public void insertBefore(LL value, LL newValue){
+
+
+    }
+
+    public void insertAfter(LL value, LL newValue){
+
+
+    }
 }
