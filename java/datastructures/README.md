@@ -15,6 +15,8 @@ Methods:
 
 `toString()` - (Override) Returns a string representing all the values in the Linked List
 
+### Code Challenge 06
+
 `append()` - Adds a node with the given value to the end of the Linked List.
 
 `insertBefore()` - Inserts a node with the given new value to a position immediately before a node with the given existing value.
