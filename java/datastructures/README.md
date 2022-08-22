@@ -20,3 +20,5 @@ Methods:
 `insertBefore()` - Inserts a node with the given new value to a position immediately before a node with the given existing value.
 
 `insertAfter`() - Inserts a node with the given new value to a position immediately after a node with the given existing value.
+
+`delete()` - Deletes a node with a given value from the Linked List.
