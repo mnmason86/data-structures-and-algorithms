@@ -22,3 +22,8 @@ Methods:
 `insertAfter`() - Inserts a node with the given new value to a position immediately after a node with the given existing value.
 
 `delete()` - Deletes a node with a given value from the Linked List.
+
+
+Attributions:
+Ben Mills
+[GitHub repository](https://github.com/akkanben/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/linkedlist) for formatting and logic examples
