@@ -49,9 +49,21 @@ public class LinkedList<LL> {
       }
     }
 
-    public void insertBefore(LL value, LL newValue){
+    public void insertBefore(LL givenValue, LL newValue){
 
+      Node<LL> newNode = new Node<>(newValue);
+      Node<LL> current = head;
 
+      while (current.next != null){
+        if (current.next.value == givenValue) {
+          newNode.next = current.next;
+          current.next = newNode;
+          listSize++;
+          break;
+        } else {
+          current = current.next;
+        }
+      }
     }
 
     public void insertAfter(LL value, LL newValue){

@@ -13,6 +13,10 @@ Methods:
 
 `includes()` - Indicates whether the given value exists as a Node's value somewhere within the list.
 
-`toString()` = (Override) Returns a string representing all the values in the Linked List
+`toString()` - (Override) Returns a string representing all the values in the Linked List
 
-`append()` = Adds a node with the given value to the end of the Linked List.
+`append()` - Adds a node with the given value to the end of the Linked List.
+
+`insertBefore()` - Inserts a node with the given new value to a position immediately before a node with the given existing value.
+
+`insertAfter`() - Inserts a node with the given new value to a position immediately after a node with the given existing value.

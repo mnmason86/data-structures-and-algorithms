@@ -58,4 +58,18 @@ public class LinkedListTest
 
      assertTrue(LL.includes(2));
    }
+
+   @Test void insertBefore() {
+    LinkedList<Integer> LL = new LinkedList<>();
+     LL.insert(4);
+     LL.insert(9);
+     LL.insert(0);
+     LL.insert(12);
+
+     LL.insertBefore(9,5);
+     String stringTest = LL.toString();
+
+     assertTrue(stringTest.contains("{ 5 } -> { 9 }"));
+
+   }
 }
