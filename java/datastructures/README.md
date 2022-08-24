@@ -25,6 +25,10 @@ Methods:
 
 `delete()` - Deletes a node with a given value from the Linked List.
 
+### Code Challenge 07
+
+`kthFromEnd()` - Finds the value of a Node that is k positions from the end of the list, where k is a given integer.
+
 
 Attributions:
 Ben Mills
