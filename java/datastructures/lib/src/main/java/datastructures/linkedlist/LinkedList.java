@@ -96,7 +96,7 @@ public class LinkedList<LL> {
       }
     }
 
-    public LL kthFromEnd(int k){
+    public int kthFromEnd(int k){
       if(head == null || k < 0){
         throw new IllegalArgumentException("List is empty.");
       }
@@ -109,11 +109,19 @@ public class LinkedList<LL> {
       for(int i = 1; i < kthPosition; i++) {
         current = current.next;
       }
-      return current.value;
+      return (int)current.value;
     }
 
     public int getListSize(){
+      return this.listSize;
+    }
 
-    return this.listSize;
+    public LinkedList<Integer> zipLists(LinkedList<Integer> listOne, LinkedList<Integer> listTwo){
+      LinkedList<Integer> zippedList = new LinkedList<>();
+      //Assign head nodes
+        Node <Integer> currentOne = listOne.head;
+        Node <Integer> currentTwo = listTwo.head;
+         
+      return zippedList;
     }
 }
