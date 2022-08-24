@@ -99,15 +99,19 @@ public class LinkedListTest
 //   }
 
    @Test void kthFromEndTest(){
-     LinkedList<Integer> LL = new LinkedList<>();
-     LL.insert(4);
-     LL.insert(9);
-     LL.insert(0);
-     LL.insert(12);
-     LL.insert(7);
-     LL.insert(1);
+     LinkedList<Integer> sut = new LinkedList<>();
+     sut.insert(4);
+     sut.insert(9);
+     sut.insert(0);
+     sut.insert(12);
+     sut.insert(7);
+     sut.insert(1);
 
-     int sut = LL.kthFromEnd(5);
-     assertTrue(sut == 4);
+     assertEquals(4, sut.kthFromEnd(0));
+     assertEquals(9, sut.kthFromEnd(1));
+     assertEquals(0, sut.kthFromEnd(2));
+     assertEquals(12, sut.kthFromEnd(3));
+     assertEquals(7, sut.kthFromEnd(4));
+     assertEquals(1, sut.kthFromEnd(5));
    }
 }
