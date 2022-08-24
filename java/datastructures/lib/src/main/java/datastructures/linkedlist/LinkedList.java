@@ -108,12 +108,12 @@ public class LinkedList<LL> {
       System.out.println("kth position:" + kthPosition);
       for(int i = 1; i < kthPosition; i++) {
         current = current.next;
-        System.out.println(current.value);
       }
       return current.value;
     }
 
     public int getListSize(){
+
     return this.listSize;
     }
 }
