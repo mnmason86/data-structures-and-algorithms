@@ -1,26 +1,26 @@
 package datastructures.linkedlist;
 
-public class Node <LL>{
-  public LL value;
-  public Node<LL> next = null;
+public class Node {
+  public int value;
+  public Node next;
 
-  public Node (LL value) {
+  public Node (int value) {
     this.value = value;
   }
 
-  public LL getValue() {
+  public int getValue() {
     return value;
   }
 
-  public void setValue(LL value) {
+  public void setValue(int value) {
     this.value = value;
   }
 
-  public Node<LL> getNext() {
+  public Node getNext() {
     return next;
   }
 
-  public void setNext(Node<LL> next) {
+  public void setNext(Node next) {
     this.next = next;
   }
 }
