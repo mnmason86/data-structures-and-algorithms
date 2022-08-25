@@ -1,20 +1,19 @@
 package datastructures.linkedlist;
 
 public class LinkedList<LL> {
-  public Node<LL> head = null;
+  public Node head = null;
   public int listSize = 0;
 
-  public void insert(LL value){
-    Node<LL> newHead = new Node<>(value);
-
+  public void insert(int value){
+    Node newHead = new Node (value);
     newHead.next = head;
     head = newHead;
     listSize++;
   }
-  public boolean includes (LL value) {
-    Node<LL> current = head;
+  public boolean includes (int value) {
+    Node current = head;
     while(current != null) {
-      if (current.value.equals(value)) {
+      if (current.value == value) {
         return true;
       }
       current = current.next;
@@ -25,7 +24,7 @@ public class LinkedList<LL> {
   public String toString()
     {
         String output = "";
-        Node<LL> current = head;
+        Node current = head;
         while(current != null) {
           output += "{ " + current.value + " } -> ";
           current = current.next;
@@ -33,14 +32,14 @@ public class LinkedList<LL> {
         return output + "NULL";
     }
 
-    public void append(LL value){
-      Node<LL> newTail = new Node<>(value);
+    public void append(int value){
+      Node newTail = new Node(value);
 
       if (head == null){
         newTail.next = null;
         head = newTail;
       } else {
-        Node<LL> current = head;
+        Node current = head;
         while (current.next != null){
           current = current.next;
         }
@@ -49,10 +48,10 @@ public class LinkedList<LL> {
       }
     }
 
-    public void insertBefore(LL givenValue, LL newValue){
+    public void insertBefore(int givenValue, int newValue){
 
-      Node<LL> newNode = new Node<>(newValue);
-      Node<LL> current = head;
+      Node newNode = new Node(newValue);
+      Node current = head;
 
       while (current.next != null){
         if (current.next.value == givenValue) {
@@ -66,9 +65,9 @@ public class LinkedList<LL> {
       }
     }
 
-    public void insertAfter(LL givenValue, LL newValue){
-      Node<LL> newNode = new Node<>(newValue);
-      Node<LL> current = head;
+    public void insertAfter(int givenValue, int newValue){
+      Node newNode = new Node(newValue);
+      Node current = head;
 
       while (current.next != null){
         if(current.value == givenValue){
@@ -80,15 +79,14 @@ public class LinkedList<LL> {
         current = current.next;
       }
     }
-    public void delete(LL givenValue){
-      Node<LL> current = head;
+    public void delete(int givenValue){
+      Node current = head;
       if (current.value == givenValue){
         current = null;
       }
       while (current.next != null){
         if(current.next.value == givenValue){
           current.next = current.next.next;
-          delete((LL) current.next);
           listSize--;
           return;
         }
@@ -96,14 +94,14 @@ public class LinkedList<LL> {
       }
     }
 
-    public LL kthFromEnd(int k){
+    public int kthFromEnd(int k){
       if(head == null || k < 0){
         throw new IllegalArgumentException("List is empty.");
       }
       if (k > this.getListSize()){
         throw new IllegalArgumentException("List isn't long enough");
       }
-      Node<LL> current = head;
+      Node current = head;
       int kthPosition = (this.getListSize() - k);
       System.out.println("kth position:" + kthPosition);
       for(int i = 1; i < kthPosition; i++) {
@@ -113,7 +111,27 @@ public class LinkedList<LL> {
     }
 
     public int getListSize(){
+      return this.listSize;
+    }
 
-    return this.listSize;
+    public static LinkedList zipLists(LinkedList listOne, LinkedList listTwo){
+
+      //Assign head nodes
+        Node currentOne = listOne.head;
+        Node currentTwo = listTwo.head;
+        // Zipped List to return
+        LinkedList zippedList = new LinkedList();
+        //Zipping logic
+        while(currentOne != null || currentTwo != null){
+          if (currentOne != null){
+            zippedList.append(currentOne.getValue());
+            currentOne = currentOne.next;
+          }
+          if(currentTwo != null){
+            zippedList.append(currentTwo.getValue());
+            currentTwo = currentTwo.next;
+          }
+        }
+      return zippedList;
     }
 }

@@ -31,6 +31,18 @@ Methods:
 
 ![kth From End Whiteboard](kth.jpg)
 
+### Code Challenge 08
+
+`zipLists()` - Takes in two Linked Lists, and returns a single Linked List with
+the given Lists zipped together by alternating their nodes.
+
+![zipLists Whiteboard](zipList.jpg)
+
 Attributions:
+Joshua Frazer
+[GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
+Because I aspire to write code as cleanly and as organized as this!
+
 Ben Mills
-[GitHub repository](https://github.com/akkanben/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/linkedlist) for formatting and logic examples
+[GitHub repository](https://github.com/akkanben/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/linkedlist)
+Formatting, syntax, and logic examples
