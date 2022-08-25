@@ -116,12 +116,24 @@ public class LinkedList<LL> {
       return this.listSize;
     }
 
-    public LinkedList<Integer> zipLists(LinkedList<Integer> listOne, LinkedList<Integer> listTwo){
-      LinkedList<Integer> zippedList = new LinkedList<>();
+    public LinkedList zipLists(LinkedList listOne, LinkedList listTwo){
+
       //Assign head nodes
-        Node <Integer> currentOne = listOne.head;
-        Node <Integer> currentTwo = listTwo.head;
-         
+        Node currentOne = listOne.head;
+        Node currentTwo = listTwo.head;
+        // Zipped List to return
+        LinkedList zippedList = new LinkedList();
+        //Zipping logic
+        while(currentOne != null || currentTwo != null){
+          if (currentOne != null){
+            zippedList.append(currentOne.getValue());
+            currentOne = currentOne.next;
+          }
+          if(currentTwo != null){
+            zippedList.append(currentTwo.getValue());
+            currentTwo = currentTwo.next;
+          }
+        }
       return zippedList;
     }
 }
