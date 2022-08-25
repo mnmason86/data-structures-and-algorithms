@@ -36,6 +36,8 @@ Methods:
 `zipLists()` - Takes in two Linked Lists, and returns a single Linked List with
 the given Lists zipped together by alternating their nodes.
 
+![zipLists Whiteboard](zipList.jpg)
+
 Attributions:
 Joshua Frazer
 [GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
