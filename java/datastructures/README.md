@@ -6,6 +6,8 @@
 
 ### Code Challenge 05
 
+#### Linked Lists
+
 Location: `codechallenges/linkedlist/LinkedListChallenges`
 
 Methods:
@@ -37,6 +39,25 @@ Methods:
 the given Lists zipped together by alternating their nodes.
 
 ![zipLists Whiteboard](zipList.jpg)
+
+### Code Challenge 10
+
+#### Stacks
+
+Methods:
+
+`push()` - Adds a node to the top of the stack
+`pop()` - Removes a node from the top of the stack, and returns its value
+`peek()`- Returns the value of the top node
+`isEmpty` - Returns true if the stack is empty
+
+#### Queues
+
+`enqueue()` - Adds a node to the rear of the queue
+`dequeue()` - Removes a node from the front of the queue
+`peek()` - Returns the value of the front node
+`isEmpty()` - Returns true if the queue is empty
+
 
 Attributions:
 Joshua Frazer
