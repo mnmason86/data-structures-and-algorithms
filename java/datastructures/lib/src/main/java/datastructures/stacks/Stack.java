@@ -3,7 +3,7 @@ package datastructures.stacks;
 import java.util.EmptyStackException;
 
   public class Stack<T> {
-    private Node<T> top = null;
+    public Node<T> top = null;
     public int stackSize = 0;
 
     public int getStackSize(){

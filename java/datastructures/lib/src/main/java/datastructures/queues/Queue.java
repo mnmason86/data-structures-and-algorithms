@@ -5,7 +5,7 @@ import java.util.EmptyStackException;
 public class Queue<T> {
   private Node<T> front = null;
   private Node<T> rear = null;
-  private int queueSize = 0;
+  public int queueSize = 0;
 
   public Queue() {
 
@@ -14,12 +14,12 @@ public class Queue<T> {
   public void enqueue(T value){
     Node<T> newNode = new Node<>(value);
     if (queueSize == 0){
-      newNode = front;
-      newNode = rear;
+      front = newNode;
     } else {
       rear.next = newNode;
-      rear = newNode;
     }
+    rear = newNode;
+    queueSize++;
   }
 
   public T dequeue(){
@@ -29,6 +29,7 @@ public class Queue<T> {
     }
     front = front.next;
     temp.next = null;
+    queueSize--;
     return temp.value;
   }
 
