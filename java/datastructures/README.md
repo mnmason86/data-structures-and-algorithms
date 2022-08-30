@@ -58,6 +58,14 @@ Methods:
 `peek()` - Returns the value of the front node
 `isEmpty()` - Returns true if the queue is empty
 
+### Code Challenge 11
+
+#### Pseudo Queue
+
+Methods:
+
+`enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach
+`dequeue()` - Extracts a value from the PseudoQueue using a FIFO approach
 
 Attributions:
 Joshua Frazer
