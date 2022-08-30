@@ -31,14 +31,14 @@ Methods:
 
 `kthFromEnd()` - Finds the value of a Node that is k positions from the end of the list, where k is a given integer.
 
-![kth From End Whiteboard](kth.jpg)
+<img src="kth.jpg" alt="kth from end" height="500"/>
 
 ### Code Challenge 08
 
 `zipLists()` - Takes in two Linked Lists, and returns a single Linked List with
 the given Lists zipped together by alternating their nodes.
 
-![zipLists Whiteboard](zipList.jpg)
+<img src="zipList.jpg" alt="zipped lists" height="500"/>
 
 ### Code Challenge 10
 
@@ -71,6 +71,10 @@ Methods:
 complexity.
 
 Attributions:
+
+MisterCode - YouTube
+[PseudoQueue Explanation](https://www.youtube.com/watch?v=AN0axYeLue0&t=214s)
+
 Joshua Frazer
 [GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
 Because I aspire to write code as cleanly and as organized as this!
