@@ -38,7 +38,7 @@ Methods:
 `zipLists()` - Takes in two Linked Lists, and returns a single Linked List with
 the given Lists zipped together by alternating their nodes.
 
-![zipLists Whiteboard](zipList.jpg)
+<img src="zipList.jpg" alt="zipped lists" height="500"/>
 
 ### Code Challenge 10
 
