@@ -1,4 +1,7 @@
-package datastructures.queues;
+package datastructures.linkedlist;
+
+
+import datastructures.linkedlist.Node;
 
 import java.util.EmptyStackException;
 

@@ -1,4 +1,6 @@
-package datastructures.stacks;
+package datastructures.linkedlist;
+
+import datastructures.linkedlist.Node;
 
 import java.util.EmptyStackException;
 

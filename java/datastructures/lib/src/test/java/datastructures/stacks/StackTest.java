@@ -1,5 +1,6 @@
 package datastructures.stacks;
 
+import datastructures.linkedlist.Stack;
 import org.junit.jupiter.api.Test;
 
 import java.util.EmptyStackException;
