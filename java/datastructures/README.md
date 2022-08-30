@@ -70,6 +70,16 @@ Methods:
 `dequeue()` - Extracts a value from the PseudoQueue using a FIFO approach. O(n)
 complexity.
 
+### Code Challenge 12
+
+#### Animal Shelter
+
+Methods:
+
+`enqueue()` - Adds an animal of type Cat or Dog to the animal shelter queue
+`dequeue()` - Accepts a preference of 'dog' or 'cat', and returns an animal of
+the specified type
+
 Attributions:
 
 MisterCode - YouTube
