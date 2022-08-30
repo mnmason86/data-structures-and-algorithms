@@ -7,4 +7,5 @@
 [Array Binary Search](/java/ArrayBinarySearch/README.md)   
 [Linked Lists](/java/datastructures/README.md)   
 [Stacks & Queues](/java/datastructures/README.md)   
+[PseudoQueue](/java/datastructures/README.md)   
 
