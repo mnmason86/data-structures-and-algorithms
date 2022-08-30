@@ -62,6 +62,7 @@ Methods:
 
 #### Pseudo Queue
 
+
 Methods:
 
 `enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach   
