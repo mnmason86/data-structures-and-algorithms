@@ -1,6 +1,6 @@
 package datastructures.queues;
 
-import datastructures.stacks.Stack;
+import datastructures.linkedlist.Queue;
 import org.junit.jupiter.api.Test;
 
 import java.util.EmptyStackException;

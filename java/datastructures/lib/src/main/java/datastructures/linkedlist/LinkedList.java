@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.linkedlist;
 
 public class LinkedList<T> {
   public Node<T> head = null;
@@ -114,7 +114,7 @@ public class LinkedList<T> {
       return this.listSize;
     }
 
-    public LinkedList<T> zipLists(LinkedList listOne, LinkedList listTwo){
+    public LinkedList zipLists(LinkedList listOne, LinkedList listTwo){
 
       //Assign head nodes
         Node<T> currentOne = listOne.head;
