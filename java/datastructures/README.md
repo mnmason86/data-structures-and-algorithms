@@ -64,10 +64,14 @@ Methods:
 
 Methods:
 
-`enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach
+`enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach   
 `dequeue()` - Extracts a value from the PseudoQueue using a FIFO approach
 
 Attributions:
+
+MisterCode - YouTube
+[PseudoQueue Explanation](https://www.youtube.com/watch?v=AN0axYeLue0&t=214s)
+
 Joshua Frazer
 [GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
 Because I aspire to write code as cleanly and as organized as this!
