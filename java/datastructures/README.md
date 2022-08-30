@@ -31,7 +31,7 @@ Methods:
 
 `kthFromEnd()` - Finds the value of a Node that is k positions from the end of the list, where k is a given integer.
 
-![kth From End Whiteboard](kth.jpg)
+<img src="kth.jpg" alt="kth from end" height="500"/>
 
 ### Code Challenge 08
 
