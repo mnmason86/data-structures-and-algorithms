@@ -62,11 +62,13 @@ Methods:
 
 #### Pseudo Queue
 
+Creates queue functionality (FIFO) using two stacks.
 
 Methods:
 
-`enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach   
-`dequeue()` - Extracts a value from the PseudoQueue using a FIFO approach
+`enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach. O(1) complexity
+`dequeue()` - Extracts a value from the PseudoQueue using a FIFO approach. O(n)
+complexity.
 
 Attributions:
 
