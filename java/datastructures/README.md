@@ -72,22 +72,25 @@ complexity.
 
 ### Code Challenge 12
 
-#### Animal Shelter
+#### Animal Shelter (pseudo queue)
 
 Methods:
 
-`enqueue()` - Adds an animal of type Cat or Dog to the animal shelter queue
+`enqueue()` - Adds an animal of type "cat" or "dog" to the animal shelter queue
 `dequeue()` - Accepts a preference of 'dog' or 'cat', and returns an animal of
 the specified type
 
-Attributions:
+*CC12 collaboration: Stanley Wilder*
+
+Datastructures Attributions:
 
 MisterCode - YouTube
 [PseudoQueue Explanation](https://www.youtube.com/watch?v=AN0axYeLue0&t=214s)
 
 Joshua Frazer
 [GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
-Because I aspire to write code as cleanly and as organized as this!
+Formatting, syntax, and logic help and because I aspire to write code as cleanly and
+as organized as this on my own!
 
 Ben Mills
 [GitHub repository](https://github.com/akkanben/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/linkedlist)
