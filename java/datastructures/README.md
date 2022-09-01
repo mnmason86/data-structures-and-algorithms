@@ -82,6 +82,18 @@ the specified type
 
 *CC12 collaboration: Stanley Wilder*
 
+### Code Challenge 13
+
+#### Validate Brackets
+
+Method:
+
+`validateBrackets()` - Accepts a string of characters, and returns true if the
+string contains complete sets of opening and closing brackets, regardless of
+other characters in the string.
+Time Complexity - O(n)
+Space Complexity - O(n)
+
 Datastructures Attributions:
 
 MisterCode - YouTube
