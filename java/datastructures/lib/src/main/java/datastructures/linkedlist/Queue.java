@@ -6,7 +6,7 @@ import datastructures.linkedlist.Node;
 import java.util.EmptyStackException;
 
 public class Queue<T> {
-  private Node<T> front = null;
+  Node<T> front = null;
   private Node<T> rear = null;
   public int queueSize = 0;
 
