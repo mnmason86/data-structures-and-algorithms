@@ -94,6 +94,27 @@ other characters in the string.
 Time Complexity - O(n)
 Space Complexity - O(n)
 
+
+### Code Challenge 15
+
+#### Trees
+
+Classes:
+`TNode` - value, left, and right properties
+`Binary Tree`
+    Methods:
+    `preOrder()` - returns an array of values
+    `inOrder()` - returns an array of values
+    `postOrder()` - returns an array of values
+
+`Binary Search Tree`
+sub-class of `Binary Tree`
+    Methods:
+    `add()` - Accepts a value and adds a node to the Binary Search Tree in the
+              proper location
+    `contains()` - Accepts a value and returns a boolean which indicates if the
+                   given value is contained within the Binary Search Tree
+
 Datastructures Attributions:
 
 MisterCode - YouTube
