@@ -14,7 +14,7 @@ public class BinarySearchTree<T> extends BinaryTree {
     } else {
       current = root;
       while(current != null){
-        if(newNode.value.compareTo(current.value) == 0){
+        if(newNode.value.compareTo(current.value) < 0){
           if(current.left == null){
             current.left = newNode;
             return;

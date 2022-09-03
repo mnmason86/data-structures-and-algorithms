@@ -17,4 +17,5 @@ public class BinaryTreeTest {
     sut.root = new TNode<>(9);
     assertTrue(sut.root.value == 9);
   }
+
 }

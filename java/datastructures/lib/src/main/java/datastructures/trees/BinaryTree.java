@@ -14,39 +14,47 @@ public class BinaryTree<T> {
     this.root = root;
   }
 
-  public ArrayList<T> preOrder(TNode<T> root){
-    ArrayList<T> preOrderArray = new ArrayList<>();
-    preOrderArray.add(root.value);
-    if (root.left != null){
-      preOrder(root.left);
-    }
-    if (root.right != null){
-      preOrder(root.right);
-    }
-    return preOrderArray;
+  public ArrayList<T> preOrderTraversal(){
+    ArrayList<T> arrayList = new ArrayList<>();
+    preOrder(arrayList, root);
+    return arrayList;
   }
 
-  public ArrayList<T> inOrder(TNode<T> root){
-    ArrayList<T> inOrderArray = new ArrayList<>();
-    if (root.left != null){
-      inOrder(root.left);
+  public void preOrder(ArrayList<T> list, TNode<T> tRoot){
+    list.add(tRoot.value);
+    if(tRoot.left != null){
+      preOrder(list, tRoot.left);
     }
-    inOrderArray.add(root.value);
-    if (root.right != null){
-      inOrder(root.right);
+    if(tRoot.right != null){
+      preOrder(list, tRoot.right);
     }
-    return inOrderArray;
   }
-
-  public ArrayList<T> postOrder(TNode<T> root){
-    ArrayList<T> postOrderArray = new ArrayList<>();
-    if(root.left != null){
-      postOrder(root.left);
+  public ArrayList<T> inOrderTraversal(){
+    ArrayList<T> arrayList = new ArrayList<>();
+    inOrder(arrayList, root);
+    return arrayList;
+  }
+  public void inOrder(ArrayList<T> list, TNode<T> tRoot){
+    if(tRoot.left != null){
+      inOrder(list,tRoot.left);
     }
-    if(root.right != null){
-      postOrder(root.right);
+    list.add(tRoot.value);
+    if(tRoot.right != null){
+      inOrder(list,tRoot.right);
     }
-    postOrderArray.add(root.value);
-    return postOrderArray;
+  }
+  public ArrayList<T> postOrderTraversal(){
+    ArrayList<T> arrayList = new ArrayList<>();
+    postOrder(arrayList, root);
+    return arrayList;
+  }
+  public void postOrder(ArrayList<T> list, TNode<T> tRoot){
+    if(tRoot.left != null){
+      postOrder(list,tRoot.left);
+    }
+    if(tRoot.right != null){
+      postOrder(list,tRoot.right);
+    }
+    list.add(tRoot.value);
   }
 }
