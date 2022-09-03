@@ -94,10 +94,35 @@ other characters in the string.
 Time Complexity - O(n)
 Space Complexity - O(n)
 
+
+### Code Challenge 15
+
+#### Trees
+
+Classes:
+`TNode` - value, left, and right properties
+`Binary Tree`
+    Methods:
+    `preOrder()` - returns an array of values with the root value first
+    `inOrder()` - returns an array of values with the root value in the middle
+    `postOrder()` - returns an array of values with the root value at the end
+
+`Binary Search Tree`
+sub-class of `Binary Tree`
+    Methods:
+    `add()` - Accepts a value and adds a node to the Binary Search Tree in the
+              proper location
+    `contains()` - Accepts a value and returns a boolean which indicates if the
+                   given value is contained within the Binary Search Tree
+
 Datastructures Attributions:
 
 MisterCode - YouTube
 [PseudoQueue Explanation](https://www.youtube.com/watch?v=AN0axYeLue0&t=214s)
+
+Java67.com
+[Binary Search Tree Traversal](https://www.java67.
+com/2016/07/how-to-implement-preorder-traversal-of-binary-tree-in-java.html)
 
 Joshua Frazer
 [GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
