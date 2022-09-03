@@ -62,4 +62,11 @@ public class BinarySearchTreeTest {
     ArrayList<Integer> result = new ArrayList<>(Arrays.asList(6,11,10,16,22,19,15));
     assertEquals(result, sut.postOrderTraversal());
   }
+
+  @Test
+  public void containsTest(){
+    sut.add(6);
+    assertTrue(sut.contains(6));
+    assertFalse(sut.contains(5));
+  }
 }
