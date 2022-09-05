@@ -81,20 +81,35 @@ To utilize `zipLists`, pass in two existing linked lists as arguments.
 ### Code Challenge 10
 
 #### Stacks
+Challenge Description: Using a Linked List as the underlying data storage mechanism, implement a Stack.
 
-Methods:
+#### Stacks Methods:
 
 `push()` - Adds a node to the top of the stack
 `pop()` - Removes a node from the top of the stack, and returns its value
 `peek()`- Returns the value of the top node
 `isEmpty` - Returns true if the stack is empty
 
-#### Queues
+#### Queues Methods:
 
 `enqueue()` - Adds a node to the rear of the queue
 `dequeue()` - Removes a node from the front of the queue
 `peek()` - Returns the value of the front node
 `isEmpty()` - Returns true if the queue is empty
+
+#### Efficiency
+
+All Stack and Queue methods:
+Time complexity: O(1) - Methods will take the same amount of time regardless of input
+Space complexity: O(1) - No new data structures are created
+
+#### Implementation
+
+To utilize `push` and `enqueue`, call on an instantiated stack or queue respectively, and pass in the value of the new node to be added.
+*example: `myQueue.enqueue(value)`*
+
+To utilize all other methods on stacks and queues, call on an instantiated stack or queue.
+*example: `myStack.pop()`
 
 ### Code Challenge 11
 
