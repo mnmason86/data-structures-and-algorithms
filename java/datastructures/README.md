@@ -18,14 +18,28 @@ Methods:
 `toString()` - (Override) Returns a string representing all the values in the Linked List
 
 ### Code Challenge 06
+Challenge description: Extend a Linked List to allow various insertion methods
 
 `append()` - Adds a node with the given value to the end of the Linked List.
 
 `insertBefore()` - Inserts a node with the given new value to a position immediately before a node with the given existing value.
 
-`insertAfter`() - Inserts a node with the given new value to a position immediately after a node with the given existing value.
+`insertAfter()` - Inserts a node with the given new value to a position immediately after a node with the given existing value.
 
 `delete()` - Deletes a node with a given value from the Linked List.
+
+#### Efficiency
+
+*Big-O analysis for each of the above methods:*
+Time complexity: O(n) - Each node will be visited once at most.
+Space complexity: O(1) - No new data structures are created.
+
+#### Whiteboard
+
+#### Implementation
+
+To utilize `append`, `insertBefore`, `insertAfter`, and `delete`, call them on an instantiated linked list with the required parameters.
+*example: `linkedList.append(value)`*
 
 ### Code Challenge 07
 
