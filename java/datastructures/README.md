@@ -128,7 +128,6 @@ Creates queue functionality (FIFO) using two stacks.
 
 `enqueue()` - Inserts a given value into the PseudoQueue
 `dequeue()` - Extracts a value from the PseudoQueue
-complexity.
 
 #### Efficiency
 
