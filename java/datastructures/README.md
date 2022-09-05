@@ -21,7 +21,7 @@ Methods:
 
 Challenge description: Extend a Linked List to allow various insertion methods
 
-#### Methods: 
+#### Methods:
 
 `append()` - Adds a node with the given value to the end of the Linked List.
 `insertBefore()` - Inserts a node with the given new value to a position immediately before a node with the given existing value.
@@ -162,7 +162,7 @@ Create a class called AnimalShelter which holds only cats and dogs, operates usi
 
 **Enqueue**
 Time Complexity: O(1) - Time will be constant regardless of the input
-Space Complexity: O(1) - No new data structures are created 
+Space Complexity: O(1) - No new data structures are created
 
 **Dequeue**
 Time Complexity: O(n) - May visit each node in the pseudoqueue to locate an animal of the given preference
@@ -189,8 +189,12 @@ other characters in the string.
 
 #### Efficiency
 
-Time Complexity: O(n^2) - While the queue size is greater than 1, a switch statement is run to determine if a set of brackets is present 
+Time Complexity: O(n^2) - While the queue size is greater than 1, a switch statement is run to determine if a set of brackets is present
 Space Complexity:  O(n) - Characters from the given input are passed into a Stack and a Queue for validation
+
+#### Whiteboard
+
+<img src="brackets.jpg" alt="validate brackets" height="500"/> 
 
 #### Implementation
 
