@@ -149,13 +149,33 @@ To utilize `dequeue`, call on an instantiated PseudoQueue
 
 ### Animal Shelter (pseudo queue)
 
-Methods:
+#### Challenge Description
+
+Create a class called AnimalShelter which holds only cats and dogs, operates using a FIFO approach, and contains enqueue and dequeue methods.
+
+#### Methods:
 
 `enqueue()` - Adds an animal of type "cat" or "dog" to the animal shelter queue
-`dequeue()` - Accepts a preference of 'dog' or 'cat', and returns an animal of
-the specified type
+`dequeue()` - Accepts a preference of "cat" or "dog", and returns an animal of the specified type
 
-*CC12 collaboration: Stanley Wilder*
+#### Efficiency
+
+**Enqueue**
+Time Complexity: O(1) - Time will be constant regardless of the input
+Space Complexity: O(1) - No new data structures are created 
+
+**Dequeue**
+Time Complexity: O(n) - May visit each node in the pseudoqueue to locate an animal of the given preference
+Space Complexity: O(1) - No new data structures are created
+
+#### Implementation
+To utilize `enqueue`, call on an instantiated PseudoQueue with an animal type argument
+*example: `pseudoQueue.enqueue("dog")`
+
+To utilize `dequeue`, call on an instantiated PseudoQueue with an animal type preference ("dog" or "cat")
+*example: `pseudoQueue.dequeue("dog")`
+
+***CC12 collaboration: Stanley Wilder***
 
 ### Code Challenge 13
 
