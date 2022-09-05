@@ -1,7 +1,5 @@
 # Data Structures
 
-## Implementation Notes
-
 ## Code Challenges
 
 ### Code Challenge 05
@@ -65,7 +63,20 @@ To utilize `kthFromEnd`, call on an instantiated linked list with the required p
 `zipLists()` - Takes in two Linked Lists, and returns a single Linked List with
 the given Lists zipped together by alternating their nodes.
 
+#### Efficiency
+
+*Big-O analysis for each of the above methods:*
+Time complexity: O(n^2) - During each list iteration, the append method is called, which iterates through a list to add a node.
+Space complexity: O(1) - `zipLists` will always accept two linked lists and return one linked list.
+
+#### Whiteboard
+
 <img src="zipList.jpg" alt="zipped lists" height="500"/>
+
+#### Implementation
+
+To utilize `zipLists`, pass in two existing linked lists as arguments.
+*example: `zipLists(listOne, listTwo)*
 
 ### Code Challenge 10
 
