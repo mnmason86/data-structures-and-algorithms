@@ -194,7 +194,7 @@ Space Complexity:  O(n) - Characters from the given input are passed into a Stac
 
 #### Whiteboard
 
-<img src="brackets.jpg" alt="validate brackets" height="500"/>
+<img src="brackets.jpg" alt="validate brackets" height="500"/> 
 
 #### Implementation
 
