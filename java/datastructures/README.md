@@ -45,7 +45,20 @@ To utilize `append`, `insertBefore`, `insertAfter`, and `delete`, call them on a
 
 `kthFromEnd()` - Finds the value of a Node that is k positions from the end of the list, where k is a given integer.
 
+#### Efficiency
+
+*Big-O analysis for each of the above methods:*
+Time complexity: O(n) - Each node will be visited once at most.
+Space complexity: O(1) - No new data structures are created.
+
+#### Whiteboard
+
 <img src="kth.jpg" alt="kth from end" height="500"/>
+
+#### Implementation
+
+To utilize `kthFromEnd`, call on an instantiated linked list with the required parameters.
+*example: `linkedList.kthFromEnd(value)`*
 
 ### Code Challenge 08
 
