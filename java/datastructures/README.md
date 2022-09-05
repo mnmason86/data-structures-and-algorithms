@@ -179,15 +179,23 @@ To utilize `dequeue`, call on an instantiated PseudoQueue with an animal type pr
 
 ### Code Challenge 13
 
-#### Validate Brackets
+### Validate Brackets
 
-Method:
+#### Challenge Description
 
 `validateBrackets()` - Accepts a string of characters, and returns true if the
 string contains complete sets of opening and closing brackets, regardless of
 other characters in the string.
-Time Complexity - O(n)
-Space Complexity - O(n)
+
+#### Efficiency
+
+Time Complexity: O(n^2) - While the queue size is greater than 1, a switch statement is run to determine if a set of brackets is present 
+Space Complexity:  O(n) - Characters from the given input are passed into a Stack and a Queue for validation
+
+#### Implementation
+
+To utilize `validateBrackets`, call the method and pass in a string
+*example: `validateBrackets("[some]{text}here")`
 
 
 ### Code Challenge 15
