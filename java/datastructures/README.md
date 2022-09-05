@@ -4,7 +4,7 @@
 
 ### Code Challenge 05
 
-#### Linked Lists
+### Linked Lists
 
 Location: `codechallenges/linkedlist/LinkedListChallenges`
 
@@ -16,14 +16,16 @@ Methods:
 `toString()` - (Override) Returns a string representing all the values in the Linked List
 
 ### Code Challenge 06
+
+### Linked Lists
+
 Challenge description: Extend a Linked List to allow various insertion methods
 
+#### Methods: 
+
 `append()` - Adds a node with the given value to the end of the Linked List.
-
 `insertBefore()` - Inserts a node with the given new value to a position immediately before a node with the given existing value.
-
 `insertAfter()` - Inserts a node with the given new value to a position immediately after a node with the given existing value.
-
 `delete()` - Deletes a node with a given value from the Linked List.
 
 #### Efficiency
@@ -40,6 +42,8 @@ To utilize `append`, `insertBefore`, `insertAfter`, and `delete`, call them on a
 *example: `linkedList.append(value)`*
 
 ### Code Challenge 07
+
+### Linked Lists
 
 `kthFromEnd()` - Finds the value of a Node that is k positions from the end of the list, where k is a given integer.
 
@@ -60,6 +64,8 @@ To utilize `kthFromEnd`, call on an instantiated linked list with the required p
 
 ### Code Challenge 08
 
+### Linked Lists
+
 `zipLists()` - Takes in two Linked Lists, and returns a single Linked List with
 the given Lists zipped together by alternating their nodes.
 
@@ -76,12 +82,12 @@ Space complexity: O(1) - `zipLists` will always accept two linked lists and retu
 #### Implementation
 
 To utilize `zipLists`, pass in two existing linked lists as arguments.
-*example: `zipLists(listOne, listTwo)*
+*example: `zipLists(listOne, listTwo0)`*
 
 ### Code Challenge 10
 
-#### Stacks
-Challenge Description: Using a Linked List as the underlying data storage mechanism, implement a Stack.
+### Stacks & Queues
+Challenge Description: Using a Linked List as the underlying data storage mechanism, implement a Stack and a Queue.
 
 #### Stacks Methods:
 
@@ -113,19 +119,36 @@ To utilize all other methods on stacks and queues, call on an instantiated stack
 
 ### Code Challenge 11
 
-#### Pseudo Queue
+### PseudoQueue
 
+#### Challenge Description:
 Creates queue functionality (FIFO) using two stacks.
 
-Methods:
+#### Methods:
 
-`enqueue()` - Inserts a given value into the PseudoQueue using a FIFO approach. O(1) complexity
-`dequeue()` - Extracts a value from the PseudoQueue using a FIFO approach. O(n)
+`enqueue()` - Inserts a given value into the PseudoQueue
+`dequeue()` - Extracts a value from the PseudoQueue
 complexity.
+
+#### Efficiency
+
+**Enqueue**
+Time Complexity: O(1) - Will add a single node every time
+Space Complexity: O(1) - No new data structures are created
+
+**Dequeue**
+Time Complexity: O(n) - May visit each node in the stack to locate given input value
+Space Complexity: O(1) - No new data structures are created
+
+#### Implementation
+To utilize `enqueue`, call on an instantiated PseudoQueue with a value argument
+*example: `pseudoQueue.enqueue(value)`
+
+To utilize `dequeue`, call on an instantiated PseudoQueue
 
 ### Code Challenge 12
 
-#### Animal Shelter (pseudo queue)
+### Animal Shelter (pseudo queue)
 
 Methods:
 
