@@ -206,6 +206,8 @@ To utilize `validateBrackets`, call the method and pass in a string
 
 #### Trees
 
+#### Challenge Description and Methods
+
 Classes:
 `TNode` - value, left, and right properties
 `Binary Tree`
@@ -221,8 +223,33 @@ sub-class of `Binary Tree`
               proper location
     `contains()` - Accepts a value and returns a boolean which indicates if the
                    given value is contained within the Binary Search Tree
+                   
+#### Efficiency
 
-Datastructures Attributions:
+`preOrder`, `inOrder`, and `postOrder`
+Time Complexity: O(n+m) - n is the number of nodes traversed, and m is the number of edges in the tree. Reduced, the complexity is O(n)
+Space Complexity: (n) - An Array List of values in the tree is being created, with an unknown size
+
+`add`
+Time Complexity: O(n) - Each node may be visited once to locate the appropriate placement for the given value
+Space Complexity: O(1) - No new data structures are being created
+
+`contains`
+Time Complexity: O(n) - Each node may be visited once to locate the given value
+Space Complexity: O(1) - No new data structures are being created
+
+#### Implementation
+
+To utilize `preOrder`, `inOrder`, and `postOrder`, call the method `preOrderTraversal`, `inOrderTraversal`, or `postOrderTraversal` respectively on an instantiated Binary Tree.
+*example: `someTree.preOrderTraversal`*
+
+To utilize `add` or `contains`, call the method on an instantiated Binary Tree with a value as an argument
+*example: `someTree.add(value)`*
+
+
+Datastructures Resources and Attributions:
+
+[Stack Overflow](https://stackoverflow.com/)
 
 MisterCode - YouTube
 [PseudoQueue Explanation](https://www.youtube.com/watch?v=AN0axYeLue0&t=214s)
