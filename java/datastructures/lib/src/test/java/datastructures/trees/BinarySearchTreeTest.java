@@ -81,6 +81,7 @@ public class BinarySearchTreeTest {
   }
   @Test
   public void nullMaxTest(){
+    //Empty Binary Tree, root = null
     assertEquals(-2147483648, sut.findMaxValue(sut.root));
   }
 }
