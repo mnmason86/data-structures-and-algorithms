@@ -194,7 +194,7 @@ Space Complexity:  O(n) - Characters from the given input are passed into a Stac
 
 #### Whiteboard
 
-<img src="brackets.jpg" alt="validate brackets" height="500"/> 
+<img src="brackets.jpg" alt="validate brackets" height="500"/>
 
 #### Implementation
 
@@ -223,7 +223,7 @@ sub-class of `Binary Tree`
               proper location
     `contains()` - Accepts a value and returns a boolean which indicates if the
                    given value is contained within the Binary Search Tree
-                   
+
 #### Efficiency
 
 `preOrder`, `inOrder`, and `postOrder`
@@ -246,6 +246,32 @@ To utilize `preOrder`, `inOrder`, and `postOrder`, call the method `preOrderTrav
 To utilize `add` or `contains`, call the method on an instantiated Binary Tree with a value as an argument
 *example: `someTree.add(value)`*
 
+### Code Challenge 16
+
+#### Trees (extended implementation)
+
+#### Challenge Description and Methods
+
+Find the maximum value in a Binary Tree
+
+`findMaxValue()` - Finds the maximum integer value stored in a Binary Tree. Pass in the root of the tree as an argument
+
+#### Efficiency
+
+Time Complexity: O(n) - Each node may be visited once to determine if its value is greater than the current max value.
+Space Complexity: O(1) - No new data structures are being created
+
+#### Whiteboard
+
+<img src="CC16_WhiteBoard.jpg" alt="find max value" height="500"/>
+
+#### Implementation
+
+To utilize `findMaxValue`, call on an instantiated Binary Tree, and pass in the
+node at the root of the tree as an argument.
+*example `someTree.findMaxValue(someTree.root)`
+
+
 
 Datastructures Resources and Attributions:
 
@@ -257,6 +283,9 @@ MisterCode - YouTube
 Java67.com
 [Binary Search Tree Traversal](https://www.java67.
 com/2016/07/how-to-implement-preorder-traversal-of-binary-tree-in-java.html)
+
+geeksforgeeks.org
+[Find maximum in Binary Tree](https://www.geeksforgeeks.org/find-maximum-or-minimum-in-binary-tree/)
 
 Joshua Frazer
 [GitHub repository](https://github.com/Frazmatic/data-structures-and-algorithms)
