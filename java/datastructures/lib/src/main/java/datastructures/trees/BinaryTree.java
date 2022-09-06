@@ -57,4 +57,20 @@ public class BinaryTree<T> {
     }
     list.add(tRoot.value);
   }
+  public static int findMaxValue(TNode tRoot) {
+    if (tRoot == null){
+      return Integer.MIN_VALUE;
+    }
+    int max = (int) tRoot.value;
+    int leftMax = findMaxValue(tRoot.left);
+    int rightMax = findMaxValue(tRoot.right);
+
+    if(leftMax > max){
+      max = leftMax;
+    }
+    if(rightMax > max){
+      max = rightMax;
+    }
+    return max;
+    }
 }
