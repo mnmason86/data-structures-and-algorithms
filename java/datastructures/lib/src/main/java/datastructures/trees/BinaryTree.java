@@ -59,6 +59,7 @@ public class BinaryTree<T> {
   }
   public static int findMaxValue(TNode tRoot) {
     if (tRoot == null){
+      System.out.println(Integer.MIN_VALUE);
       return Integer.MIN_VALUE;
     }
     int max = (int) tRoot.value;

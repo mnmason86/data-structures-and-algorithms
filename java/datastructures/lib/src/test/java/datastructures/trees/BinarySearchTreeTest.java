@@ -69,4 +69,18 @@ public class BinarySearchTreeTest {
     assertTrue(sut.contains(6));
     assertFalse(sut.contains(5));
   }
+  @Test
+  public void findMaxTest(){
+    sut.add(10);
+    sut.add(4);
+    sut.add(75);
+    sut.add(1);
+    sut.add(42);
+
+    assertEquals(75, sut.findMaxValue(sut.root));
+  }
+  @Test
+  public void nullMaxTest(){
+    assertEquals(-2147483648, sut.findMaxValue(sut.root));
+  }
 }

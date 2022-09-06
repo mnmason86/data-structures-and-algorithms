@@ -13,7 +13,7 @@ public class BinaryTreeTest {
     assertNotNull(sut);
   }
   @Test
-  public void instantiateWithRootTest(){
+  public void instantiateWithRootTest() {
     sut.root = new TNode<>(9);
     assertTrue(sut.root.value == 9);
   }
