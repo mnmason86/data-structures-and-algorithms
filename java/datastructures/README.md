@@ -271,7 +271,28 @@ To utilize `findMaxValue`, call on an instantiated Binary Tree, and pass in the
 node at the root of the tree as an argument.
 *example `someTree.findMaxValue(someTree.root)`
 
+### Code Challenge 17
 
+#### Trees (extended implementation)
+
+#### Challenge Description and Methods
+
+Perform a breadth-first search on a Binary Tree
+
+`breadthFirst()` - Returns an array of values contained in a Binary Tree by level,
+starting at the root
+
+#### Efficiency
+
+Time Complexity: O(n) - Each value in the tree will be visited once and pushed to
+an array list
+Space Complexity: O(n) - Both a queue and an array list of 'n' length will be created
+
+#### Implementation
+
+To utilize `breadthFirst`, call on an instantiated Binary Tree, and pass in the
+root as an argument
+*example: `someTree.breadthFirst(someTree.root)`*
 
 Datastructures Resources and Attributions:
 

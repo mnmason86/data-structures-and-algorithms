@@ -1,7 +1,9 @@
 package datastructures.trees;
 
-import java.lang.reflect.Array;
+import datastructures.linkedlist.Queue;
+
 import java.util.ArrayList;
+
 
 public class BinaryTree<T> {
   public TNode<T> root = null;
@@ -73,5 +75,25 @@ public class BinaryTree<T> {
       max = rightMax;
     }
     return max;
+    }
+
+
+    public ArrayList breadthFirst(TNode<T> tRoot){
+      ArrayList<T> list = new ArrayList<>();
+      Queue<TNode<T>> breadth = new Queue<>();
+      breadth.enqueue(tRoot);
+
+      while (!breadth.isEmpty()){
+        TNode<T> front = breadth.dequeue();
+        list.add(front.value);
+
+        if(front.left != null){
+          breadth.enqueue(front.left);
+        }
+        if(front.right != null){
+          breadth.enqueue(front.right);
+        }
+      }
+      return list;
     }
 }

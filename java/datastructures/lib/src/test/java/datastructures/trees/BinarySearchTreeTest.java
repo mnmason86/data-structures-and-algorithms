@@ -84,4 +84,15 @@ public class BinarySearchTreeTest {
     //Empty Binary Tree, root = null
     assertEquals(-2147483648, sut.findMaxValue(sut.root));
   }
+  @Test
+  public void breadthFirstTest(){
+    sut.add(10);
+    sut.add(4);
+    sut.add(75);
+    sut.add(1);
+    sut.add(42);
+
+    ArrayList<Integer> result = new ArrayList<>(Arrays.asList(10,4,75,1,42));
+    assertEquals(result, sut.breadthFirst(sut.root));
+  }
 }
