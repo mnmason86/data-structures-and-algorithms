@@ -294,6 +294,40 @@ To utilize `breadthFirst`, call on an instantiated Binary Tree, and pass in the
 root as an argument
 *example: `someTree.breadthFirst(someTree.root)`*
 
+### Code Challenge 18
+
+#### Trees (extended implementation)
+
+#### Challenge Description
+
+Write a FizzBuzz method, which takes in a K-ary tree of integers, and returns a
+new K-ary tree of strings.
+
+#### Methods
+
+`fizzBuzz` - Takes in an integer, and returns a string based on the value of the
+integer. If the integer is divisible by 3: returns "Fizz", if divisible by 5:
+returns "Buzz", if divisible by both 3 and 5: returns "FizzBuzz", if not
+divisible by 3 or 5, returns the integer as a string.
+
+`makeFizzBuzzTree` - When called on a tree, returns a new tree with integer
+values replaced by strings as determined in the `fizzBuzz` method.
+
+#### Efficiency
+
+`makeFizzBuzzTree`
+Time Complexity: O(n) - Each node in the tree is visited once to determine its
+children, and return a string in place of the integer value.
+for children, a
+Space Complexity: O(n) - A new tree is constructed with the same number of nodes
+as the input tree
+
+#### Implementation
+
+To utilize `makeFizzBuzzTree`, call on an instantiated K-nary tree with integers
+as the values of the nodes.
+*example: `someTree.makeFizzBuzzTree()`*
+
 Datastructures Resources and Attributions:
 
 [Stack Overflow](https://stackoverflow.com/)

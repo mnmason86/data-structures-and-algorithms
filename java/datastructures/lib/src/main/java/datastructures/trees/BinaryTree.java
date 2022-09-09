@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class BinaryTree<T> {
   public TNode<T> root = null;
 
-  public BinaryTree(){
+  public BinaryTree() {
     //default constructor
   }
 
@@ -16,51 +16,56 @@ public class BinaryTree<T> {
     this.root = root;
   }
 
-  public ArrayList<T> preOrderTraversal(){
+  public ArrayList<T> preOrderTraversal() {
     ArrayList<T> arrayList = new ArrayList<>();
     preOrder(arrayList, root);
     return arrayList;
   }
 
-  public void preOrder(ArrayList<T> list, TNode<T> tRoot){
+  public void preOrder(ArrayList<T> list, TNode<T> tRoot) {
     list.add(tRoot.value);
-    if(tRoot.left != null){
+    if (tRoot.left != null) {
       preOrder(list, tRoot.left);
     }
-    if(tRoot.right != null){
+    if (tRoot.right != null) {
       preOrder(list, tRoot.right);
     }
   }
-  public ArrayList<T> inOrderTraversal(){
+
+  public ArrayList<T> inOrderTraversal() {
     ArrayList<T> arrayList = new ArrayList<>();
     inOrder(arrayList, root);
     return arrayList;
   }
-  public void inOrder(ArrayList<T> list, TNode<T> tRoot){
-    if(tRoot.left != null){
-      inOrder(list,tRoot.left);
+
+  public void inOrder(ArrayList<T> list, TNode<T> tRoot) {
+    if (tRoot.left != null) {
+      inOrder(list, tRoot.left);
     }
     list.add(tRoot.value);
-    if(tRoot.right != null){
-      inOrder(list,tRoot.right);
+    if (tRoot.right != null) {
+      inOrder(list, tRoot.right);
     }
   }
-  public ArrayList<T> postOrderTraversal(){
+
+  public ArrayList<T> postOrderTraversal() {
     ArrayList<T> arrayList = new ArrayList<>();
     postOrder(arrayList, root);
     return arrayList;
   }
-  public void postOrder(ArrayList<T> list, TNode<T> tRoot){
-    if(tRoot.left != null){
-      postOrder(list,tRoot.left);
+
+  public void postOrder(ArrayList<T> list, TNode<T> tRoot) {
+    if (tRoot.left != null) {
+      postOrder(list, tRoot.left);
     }
-    if(tRoot.right != null){
-      postOrder(list,tRoot.right);
+    if (tRoot.right != null) {
+      postOrder(list, tRoot.right);
     }
     list.add(tRoot.value);
   }
+
   public static int findMaxValue(TNode tRoot) {
-    if (tRoot == null){
+    if (tRoot == null) {
       System.out.println(Integer.MIN_VALUE);
       return Integer.MIN_VALUE;
     }
@@ -68,32 +73,33 @@ public class BinaryTree<T> {
     int leftMax = findMaxValue(tRoot.left);
     int rightMax = findMaxValue(tRoot.right);
 
-    if(leftMax > max){
+    if (leftMax > max) {
       max = leftMax;
     }
-    if(rightMax > max){
+    if (rightMax > max) {
       max = rightMax;
     }
     return max;
-    }
+  }
 
 
-    public ArrayList breadthFirst(TNode<T> tRoot){
-      ArrayList<T> list = new ArrayList<>();
-      Queue<TNode<T>> breadth = new Queue<>();
-      breadth.enqueue(tRoot);
+  public ArrayList breadthFirst(TNode<T> tRoot) {
+    ArrayList<T> list = new ArrayList<>();
+    Queue<TNode<T>> breadth = new Queue<>();
+    breadth.enqueue(tRoot);
 
-      while (!breadth.isEmpty()){
-        TNode<T> front = breadth.dequeue();
-        list.add(front.value);
+    while (!breadth.isEmpty()) {
+      TNode<T> front = breadth.dequeue();
+      list.add(front.value);
 
-        if(front.left != null){
-          breadth.enqueue(front.left);
-        }
-        if(front.right != null){
-          breadth.enqueue(front.right);
-        }
+      if (front.left != null) {
+        breadth.enqueue(front.left);
       }
-      return list;
+      if (front.right != null) {
+        breadth.enqueue(front.right);
+      }
     }
+    return list;
+  }
 }
+
