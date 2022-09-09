@@ -10,6 +10,7 @@ public class TNode<T> {
   }
 
   public TNode(T value){
+
     this.value = value;
   }
 
