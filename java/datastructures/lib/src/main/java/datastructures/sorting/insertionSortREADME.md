@@ -83,8 +83,7 @@ variable.
 
 *Time:* O(n^2) - While iterating over the array, we are iterating over the array
 again at index (i-1) to determine proper ordering of values in the array. In the
-worst case scenario, every value in the array is compared to every other value (n
-* n-1)
+worst case scenario, every value in the array is compared to every other value (n * n-1)
 
 *Space:* O(1) - No new data structures are being created. The array is being
 sorted in place.
