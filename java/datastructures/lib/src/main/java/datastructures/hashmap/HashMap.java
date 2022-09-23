@@ -1,7 +1,11 @@
 package datastructures.hashmap;
 
+import datastructures.linkedlist.LinkedList;
+import datastructures.linkedlist.Node;
+
+
 import java.util.ArrayList;
-import java.util.LinkedList;
+
 import java.util.List;
 
 public class HashMap<K, V> {
@@ -23,12 +27,28 @@ public class HashMap<K, V> {
   }
 
   public void set(K key, V value){
-    // TODO: implement me
+    int index = hash(key);
+    HashMapPair<K,V> newEntry = new HashMapPair<>(key,value);
+    if(bucketArrayList.get(index) != null){
+      LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+      Node<HashMapPair<K,V>> current;
+      current = list.head;
+      while(current != null && !current.value.getKey().equals(key)){
+        current = current.next;
+      }
+      if(current != null && !current.value.equals(value)){
+        current.value.setValue(value);
+        return;
+      }
+    }
+    LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+    list.append(newEntry);
+    bucketArrayList.set(index, list);
+    size++;
   }
 
   public V get(K key){
-    // TODO: implement me
-    return null;
+    
   }
 
   public List<K> getKeys(){
@@ -41,11 +61,6 @@ public class HashMap<K, V> {
     return false;
   }
 
-  // Sometimes hashCode in Java can be negative! So we need to do absolute value
-  // If you really want to hash things yourself, look at https://stackoverflow.com/a/113600/16889809
-  // Don't use Character! Don't use Object! Don't use any object you have not overridden equals() and hashCode() on!
-  // If you do this, things that should collide, won't, because Object.hashCode() is not good
-  // Protip: Testing collisions is easy with Integer, because Integer hashes to its own value
   public int hash(K key){
     return Math.abs(key.hashCode()) % size;
   }
