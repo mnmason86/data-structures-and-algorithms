@@ -48,7 +48,8 @@ public class HashMap<K, V> {
   }
 
   public V get(K key){
-    
+    // TODO: implement me
+    return null;
   }
 
   public List<K> getKeys(){
