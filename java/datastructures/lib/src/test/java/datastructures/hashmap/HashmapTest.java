@@ -55,5 +55,12 @@ public class HashmapTest {
     assertEquals(sut.keys().size(), 5);
     assertTrue(sut.keys().toString().equals("[1, 3, 5, 7, 9]") );
   }
-
+ @Test
+  public void containsTest(){
+   HashMap<Integer, Integer> sut = new HashMap<>(10);
+   sut.set(1,2);
+   sut.set(3,4);
+   sut.set(5,6);
+   assertTrue(sut.contains(5));
+ }
 }
