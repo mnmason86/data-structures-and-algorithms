@@ -2,17 +2,12 @@ package datastructures.hashmap;
 
 import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
-
-
 import java.util.ArrayList;
-
 import java.util.List;
 
-public class HashMap<K, V> {
-
-  ArrayList<LinkedList<HashMapPair<K, V>>> bucketArrayList; // using ArrayList instead of array so we can instantiate with a parameterized type
+public class HashMap<K,V> {
+  ArrayList<LinkedList<HashMapPair<K,V>>> bucketArrayList; // using ArrayList instead of array so we can instantiate with a parameterized type
   int size;
-
   public HashMap(int size) {
     if(size < 1){
       throw new IllegalArgumentException("Hashmap size must be greater than 1");
@@ -20,7 +15,6 @@ public class HashMap<K, V> {
     this.size = size;
     this.bucketArrayList = new ArrayList<>(size);
 
-    // Next part is not required, and is a little inefficient, but it makes writing HashMap operations easier
     for(int i = 0; i < this.size; i++){
       bucketArrayList.add(i, new LinkedList<>());
     }
@@ -47,18 +41,49 @@ public class HashMap<K, V> {
     size++;
   }
 
-  public V get(K key){
-    // TODO: implement me
+  public V get(K key) {
+    int index = hash(key);
+    if (bucketArrayList.get(index) != null) {
+      LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+      Node<HashMapPair<K,V>> current;
+      current = list.head;
+      while (current != null && !current.value.getKey().equals(key)) {
+        current = current.next;
+      }
+      if (current != null) {
+        return (V) current.value.getValue();
+      }
+    }
     return null;
   }
 
-  public List<K> getKeys(){
-    // TODO: implement me
-    return null;
+  public List<K> keys(){
+    List<K> allKeys = new ArrayList<>();
+    for(LinkedList<HashMapPair<K,V>> list : bucketArrayList){
+      if(list != null){
+        Node<HashMapPair<K,V>> current;
+        current = list.head;
+        while(current != null){
+          allKeys.add((K) current.value.getKey());
+          current = current.next;
+        }
+      }
+    }
+    System.out.println(allKeys);
+    return allKeys;
   }
 
-  public boolean contains(){
-    // TODO: implement me
+  public boolean contains(K key){
+    int index = hash(key);
+    if(bucketArrayList.get(index) != null){
+      LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+      Node<HashMapPair<K,V>> current = new Node<>();
+      current = list.head;
+      while(current != null && !current.value.getKey().equals(key)){
+        current = current.next;
+      }
+      return current != null;
+    }
     return false;
   }
 
