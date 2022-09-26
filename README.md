@@ -9,6 +9,8 @@
 [Stacks & Queues](/java/datastructures/README.md)   
 [PseudoQueue](/java/datastructures/README.md)   
 [Trees](/java/datastructures/README.md)   
-[Sorting](/java/datastructures/lib/src/main/java/datastructures/sorting/insertionSortREADME.md)   
+[Insertion Sort](/java/datastructures/lib/src/main/java/datastructures/sorting/insertionSortREADME.md)   
+[Merge Sort](/java/datastructures/lib/src/main/java/datastructures/sorting/mergeSortREADME.md)   
+[Quick Sort](/java/datastructures/lib/src/main/java/datastructures/sorting/quickSortREADME.md)   
 [HashMap](/java/datastructures/lib/src/main/java/datastructures/hashmap/hashmapREADME.md)
 
