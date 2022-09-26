@@ -1,5 +1,7 @@
 # Hashmap
 
+## Code Challenge 30
+
 ### Challenge Description
 
 New implementation. Implement a hashmap class with the methods `set()`, `get()`,
@@ -50,6 +52,7 @@ new array.
 `hash()`
 **Time:** O(1) - A basic mathematical operation is all that is being performed.
 **Space:** O(1) - No additional data structures are created
+
 ### Implementation instructions
 
 To utilize `set()`, call on an instantiated HashMap, and pass in the key/value
@@ -65,19 +68,37 @@ To utilize `keys()`, call on an instantiated HashMap. No arguments are needed.
 
 *example*: `map.keys()`
 
+## Code Challenge 31
+
+### Challenge Description
+
+Write a method that finds the first word to occur more than once in a string.
+
+### Method
+
+`repeatedWord()`: Accepts a string, and returns another string containing the
+first word to be repeated in the input string.
+
+### Whiteboard
+
+![Repeated Word Whiteboard](repeatedword_whiteboard.png)
+
+### Big-O
+**Time**:O(n^2) - `repeatedWord` will potentially iterate through each item in the
+Hashmap to determine if a given word is contained, and will potentially check
+every word in the input string.
+
+**Space**: O(n) - A Hashmap of unknown size (dependent upon the length of the input
+string) is created to store each word of the input.
+
+### Implementation
+
+To utilize `repeatedWord`, pass in a string as an argument.
+*example*: `repeatedWord("Once upon a time, there was a brave princess who...")`.
+The method will return "a".
+
 ### Attributions
 
 Alex White - Starter Code
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)
 
-Checklist for PR comments
-
-- [x] Readme updated
-  - [x] Challenge description
-  - [x] Methods
-  - [x] Whiteboard
-  - [x] Complexity Analysis
-- [x] Implementation
-- [x] Readme linked in Table of Contents
-- [x] Feature Tasks Completed
-- [x] Unit tests written and passing
