@@ -54,13 +54,13 @@ ALGORITHM Merge(left, right, arr)
 
 ## Trace
 
-![Merge Sort Trace](mergeSort_trace.png)
+![Merge Sort Trace](mergesort_screenshots/mergeSort_trace.png)
 
 ![Merge Trace](merge_trace.png)
 
 ## Code
 
-![Merge Sort Code](mergeSort_ss.png)
+![Merge Sort Code](mergesort_screenshots/mergeSort_ss.png)
 
 ![Merge Code](merge_ss.png)
 
