@@ -3,7 +3,9 @@ package datastructures.hashmap;
 import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class HashMap<K,V> {
   ArrayList<LinkedList<HashMapPair<K,V>>> bucketArrayList; // using ArrayList instead of array so we can instantiate with a parameterized type
@@ -38,7 +40,7 @@ public class HashMap<K,V> {
     LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
     list.append(newEntry);
     bucketArrayList.set(index, list);
-    size++;
+//    size++;
   }
 
   public V get(K key) {
@@ -77,7 +79,7 @@ public class HashMap<K,V> {
     int index = hash(key);
     if(bucketArrayList.get(index) != null){
       LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
-      Node<HashMapPair<K,V>> current = new Node<>();
+      Node<HashMapPair<K,V>> current;
       current = list.head;
       while(current != null && !current.value.getKey().equals(key)){
         current = current.next;
@@ -90,5 +92,23 @@ public class HashMap<K,V> {
   public int hash(K key){
 
     return Math.abs(key.hashCode()) % size;
+  }
+  public static String repeatedWord(String text){
+    if (text.equals("")){
+      return "Please enter text to be evaluated";
+    }
+    //separate text by spaces or punctuation
+    String[] words = text.toLowerCase().split("\\W+");
+    System.out.println(Arrays.toString(words));
+    //add words to hashmap (word, word)
+    HashMap<String, Integer> textMap = new HashMap(500);
+    for (String w : words) {
+      if (textMap.contains(w)) {
+        return w;
+      } else {
+        textMap.set(w,1);
+      }
+    }
+    return null;
   }
 }

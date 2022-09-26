@@ -63,4 +63,20 @@ public class HashmapTest {
    sut.set(5,6);
    assertTrue(sut.contains(5));
  }
+
+ @Test
+  public void repeatedWordTest(){
+    String text = "Once upon a time, there was a brave princess who...";
+    String sut = HashMap.repeatedWord(text);
+   assertTrue(sut.equals("a"));
+ }
+
+ @Test
+ public void repeatedWordTest2(){
+   String text = "It was the best of times, it was the worst of times, it was the " +
+     "age of wisdom, it was the age of foolishness, it was the epoch of belief, it" +
+     " was the epoch of incredulity, it was the season of Light, it ...";
+   String sut = HashMap.repeatedWord(text);
+   assertEquals("it", sut);
+ }
 }
