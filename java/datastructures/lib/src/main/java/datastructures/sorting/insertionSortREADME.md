@@ -26,7 +26,7 @@ InsertionSort(int[] arr)
 
 Pass 1
 
-![Pass1](insertionSort_pass1.png)
+![Pass1](insertionsort_screenshots/insertionSort_pass1.png)
 
 In the first pass through the sorting method, we evaluate the value of the
 integers at the first and second positions of the array. We find that the first
@@ -37,7 +37,7 @@ with the temp value.
 
 Pass 2
 
-![Pass2](insertionSort_pass2.png)
+![Pass2](insertionsort_screenshots/insertionSort_pass2.png)
 
 On the second pass, we evaluate the integers at the second and third positions of
 the array. We find that the second value is less than the third value, and do not
@@ -45,7 +45,7 @@ make any changes to our array.
 
 Pass 3
 
-![Pass3](insertionSort_pass3.png)
+![Pass3](insertionsort_screenshots/insertionSort_pass3.png)
 
 Just as in the second pass, in the third pass, we evaluate the integers at the
 third and fourth
@@ -55,7 +55,7 @@ make any changes to our array.
 
 Pass 4
 
-![Pass4](insertionSort_pass4.png)
+![Pass4](insertionsort_screenshots/insertionSort_pass4.png)
 
 In the fourth pass, we evaluate the integers at the fourth and fifth positions of
 the array. We find that the value of the fifth position is less than the value of
@@ -67,7 +67,7 @@ temp value.
 
 Pass 5
 
-![Pass5](insertionSort_pass5.png)
+![Pass5](insertionsort_screenshots/insertionSort_pass5.png)
 
 In the final pass, a similar process to pass 4 occurs, where the temporary value
 is less than the values at indexes 5,4,3, and 2. These values are replaced by the
@@ -76,7 +76,7 @@ variable.
 
 ## Code
 
-![insertionSort code](insertionSort_code.png)
+![insertionSort code](insertionsort_screenshots/insertionSort_code.png)
 
 
 ## Efficiency
