@@ -99,6 +99,6 @@ The method will return "a".
 
 ### Attributions
 
-Alex White - Starter Code
+Alex White - Starter Code   
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)
 
