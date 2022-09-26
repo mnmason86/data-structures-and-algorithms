@@ -15,7 +15,7 @@ public class SortingTest {
   int[] sut4 = {2,3,5,7,13,11};
 
   @Test
-  void insertSortTest(){
+  public void insertSortTest(){
 
     assertEquals("[4, 8, 15, 16, 23, 42]",
       Arrays.toString(InsertionSort.insertionSort(sut1)));
@@ -25,5 +25,16 @@ public class SortingTest {
       Arrays.toString(InsertionSort.insertionSort(sut3)));
     assertEquals("[2, 3, 5, 7, 11, 13]",
       Arrays.toString(InsertionSort.insertionSort(sut4)));
+  }
+  @Test
+  public void quickSortTest(){
+    assertEquals("[4, 8, 15, 16, 23, 42]",
+      Arrays.toString(QuickSort.getQuickSort(sut1)));
+    assertEquals("[5, 5, 5, 7, 7, 12]",
+      Arrays.toString(QuickSort.getQuickSort(sut2)));
+    assertEquals("[-2, 5, 8, 12, 18, 20]",
+      Arrays.toString(QuickSort.getQuickSort(sut3)));
+    assertEquals("[2, 3, 5, 7, 11, 13]",
+      Arrays.toString(QuickSort.getQuickSort(sut4)));
   }
 }
