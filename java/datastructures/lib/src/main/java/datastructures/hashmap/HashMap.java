@@ -97,11 +97,9 @@ public class HashMap<K,V> {
     if (text.equals("")){
       return "Please enter text to be evaluated";
     }
-    //separate text by spaces or punctuation
     String[] words = text.toLowerCase().split("\\W+");
     System.out.println(Arrays.toString(words));
-    //add words to hashmap (word, word)
-    HashMap<String, Integer> textMap = new HashMap(500);
+    HashMap<String, Integer> textMap = new HashMap(words.length);
     for (String w : words) {
       if (textMap.contains(w)) {
         return w;
