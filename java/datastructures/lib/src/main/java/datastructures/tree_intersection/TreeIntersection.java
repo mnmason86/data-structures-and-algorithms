@@ -13,13 +13,10 @@ public class TreeIntersection {
     HashMap<Integer, Integer> treeMap = new HashMap<>(30);
     //map items from tree1 into treeMap
     ArrayList tree1List = tree1.breadthFirst(tree1.root);
-    System.out.println(tree1List);
     for (int i = 0; i < tree1List.size(); i++) {
       Integer item = (Integer) tree1List.get(i);
       treeMap.set(item, item);
     }
-    System.out.println(treeMap.keys());
-    //map items from tree2 into treeMap
     ArrayList tree2List = tree2.breadthFirst(tree2.root);
     for (int j = 0; j < tree2List.size(); j++) {
       Integer item = (Integer) tree2List.get(j);
