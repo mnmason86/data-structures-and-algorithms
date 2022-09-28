@@ -12,6 +12,14 @@ public class BinaryTree<T> {
     //default constructor
   }
 
+  public TNode<T> getRoot() {
+    return root;
+  }
+
+  public void setRoot(TNode<T> root) {
+    this.root = root;
+  }
+
   public BinaryTree(TNode<T> root) {
     this.root = root;
   }
