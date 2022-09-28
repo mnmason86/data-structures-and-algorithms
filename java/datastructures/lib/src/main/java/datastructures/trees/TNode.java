@@ -9,6 +9,22 @@ public class TNode<T> {
     //default constructor
   }
 
+  public TNode<T> getLeft() {
+    return left;
+  }
+
+  public void setLeft(TNode<T> left) {
+    this.left = left;
+  }
+
+  public TNode<T> getRight() {
+    return right;
+  }
+
+  public void setRight(TNode<T> right) {
+    this.right = right;
+  }
+
   public TNode(T value){
 
     this.value = value;
