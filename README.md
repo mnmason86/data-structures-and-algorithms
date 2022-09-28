@@ -12,5 +12,6 @@
 [Insertion Sort](/java/datastructures/lib/src/main/java/datastructures/sorting/insertionSortREADME.md)   
 [Merge Sort](/java/datastructures/lib/src/main/java/datastructures/sorting/mergeSortREADME.md)   
 [Quick Sort](/java/datastructures/lib/src/main/java/datastructures/sorting/quickSortREADME.md)   
-[HashMap](/java/datastructures/lib/src/main/java/datastructures/hashmap/hashmapREADME.md)
+[HashMap](/java/datastructures/lib/src/main/java/datastructures/hashmap/hashmapREADME.md)   
+[Tree Intersection](/java/datastructures/lib/src/main/java/datastructures/tree_intersection/treeIntersectionREADME.md)
 
