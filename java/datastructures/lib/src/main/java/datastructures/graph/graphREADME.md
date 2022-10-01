@@ -6,7 +6,7 @@
 
 New Implementation - Implement your own Graph. The graph should be represented as
 an adjaceny list, and should include the following methods:
-`addNode()`
+`addVertex()`
 `addEdge()`
 `getNodes()`
 `getNeighbors()`
@@ -14,7 +14,7 @@ an adjaceny list, and should include the following methods:
 
 ### Methods
 
-`addNode()`: Takes in a value as an argument, adds a new node with the given
+`addVertex()`: Takes in a value as an argument, adds a new node with the given
 value to the graph, and returns the added node.
 
 `addEdge()`: Takes in two nodes to be connected by the edge, adds a new edge
@@ -30,5 +30,5 @@ edges connected to the given node (weight may be included if applicable). An
 empty collection is returned if the graph is empty
 
 `size()`: Takes no arguments. When called on a graph, returns the total number of
-nodes in the graph. 
+nodes in the graph.
 
