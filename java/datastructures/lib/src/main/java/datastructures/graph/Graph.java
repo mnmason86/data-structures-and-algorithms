@@ -56,6 +56,7 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
         current = current.next;
       }
     }
+    System.out.println(list.get(0).destination.value);
     return list;
   };
 

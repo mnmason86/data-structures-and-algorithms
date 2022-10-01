@@ -1,8 +1,6 @@
 # Graph
 
 ## Challenge Description
-&
-### Feature
 
 New Implementation - Implement your own Graph. The graph should be represented as
 an adjaceny list, and should include the following methods:
@@ -33,6 +31,7 @@ empty collection is returned if the graph is empty
 nodes in the graph.
 
 ### Complexity
+
 `addVertex()`
 **Time**: O(n) - Each item in the adjacencyList will potentially be visited to
 determine whether the given value is already contained in the list.
