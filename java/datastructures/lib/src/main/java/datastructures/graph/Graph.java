@@ -3,6 +3,7 @@ package datastructures.graph;
 import datastructures.hashmap.HashMap;
 import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
+import datastructures.linkedlist.Queue;
 
 import java.util.ArrayList;
 
@@ -56,13 +57,40 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
         current = current.next;
       }
     }
-    System.out.println(list.get(0).destination.value);
     return list;
   };
 
   public int size(){
     return numberOfVertices;
   };
+
+  public static int businessTrip(Graph<String> graph, String[] cities){
+    int totalCost = 0;
+    Vertex<String> start = new Vertex<>(cities[0]);
+    List<Vertex<String>> airportNames = graph.getVertices();
+    for(Vertex<String> airport : airportNames){
+      if(airport.value.equals(cities[0])){
+        start = airport;
+        break;
+      }
+    }
+    for (int i = 1; i < cities.length; i++){
+      boolean doesConnect = false;
+      for (Edge<String> edge : graph.getNeighbors(start)) {
+        if (edge.destination.value.equals(cities[i])) {
+          totalCost += edge.weight;
+          System.out.println(totalCost);
+          start = edge.destination;
+          doesConnect = true;
+          break;
+        }
+      }
+      if(!doesConnect){
+        return 0;
+      }
+    }
+      return totalCost;
+  }
 
   @Override
     public int compareTo(Graph<T> o){
