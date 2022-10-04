@@ -1,5 +1,9 @@
 # Graph
 
+## Code Challenge 35
+
+Graph Implementation
+
 ## Challenge Description
 
 New Implementation - Implement your own Graph. The graph should be represented as
@@ -73,7 +77,21 @@ arguments are
 required.
 *example:* `someGraph.getVertices()` / `someGraph.getNeighbors()` / `someGraph.size()`
 
+## Code Challenge 37
 
+Business Trip
+
+### Challenge Description
+
+Write a function called `businessTrip`, which takes in a graph and an array of
+city names, and returns the cost of the trip (if the trip is possible), and
+'null' if the trip is not possible
+
+### Method
+
+`businessTrip`: Accepts an instantiated graph, and a list of values in the form
+of city names. If the trip between cities is possible with only direct flights,
+`businessTrip` returns the cost of the trip.
 
 ### Attribution
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)

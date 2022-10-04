@@ -14,7 +14,7 @@ public class GraphTest {
     String test1 = sut.getVertices().get(0).value;
 
     assertEquals(test1, "Mandy");
-    
+
     assert(sut.size() == 1);
   }
 
