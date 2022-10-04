@@ -79,7 +79,6 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
       for (Edge<String> edge : graph.getNeighbors(start)) {
         if (edge.destination.value.equals(cities[i])) {
           totalCost += edge.weight;
-          System.out.println(totalCost);
           start = edge.destination;
           doesConnect = true;
           break;
