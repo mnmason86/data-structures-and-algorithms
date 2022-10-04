@@ -73,7 +73,37 @@ arguments are
 required.
 *example:* `someGraph.getVertices()` / `someGraph.getNeighbors()` / `someGraph.size()`
 
+## Code Challenge 37
 
+Business Trip
+
+### Challenge Description
+
+Given a business trip itinerary, and an Alaskan Airlines rout map, is the trip
+possible with direct flights? If so, how much will the total trip cost be?
+
+### Method
+
+`businessTrip` - Accepts an instantiated Graph, and an array of city names as
+arguments, and returns the value of the total cost of the trip *if* the trip is
+possible with only direct flights between the given cities. Otherwise, a total
+cost of '0' is returned.
+
+### Complexity
+
+**Time**: O(n^2) - Potentially, each edge in the graph will be evaluated against
+each city in the list of given city names.
+
+**Space**: O(n) - A new list of a variable size is created, which is dependent
+upon the size of the input graph.
+
+### Implementation
+
+To utilize `businessTrip`, pass in an instantiated Graph, and an array of Strings
+which are the names of cities contained in the graph. If there are direct
+connections between the given cities, a value greater than zero will be returned
+which reflects the total 'cost' of the trip between them.
+*example*: `businessTrip(someGraph, ["Nashville", "Atlanta"])`
 
 ### Attribution
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)
