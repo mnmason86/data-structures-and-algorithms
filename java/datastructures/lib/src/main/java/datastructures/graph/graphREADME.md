@@ -105,6 +105,20 @@ connections between the given cities, a value greater than zero will be returned
 which reflects the total 'cost' of the trip between them.
 *example*: `businessTrip(someGraph, ["Nashville", "Atlanta"])`
 
+## Code Challenge 36
+
+Breadth-first search of a Graph
+
+### Challenge Description
+
+### Methods
+
+### Whiteboard
+
+### Complexity
+
+### Implementation
+
 ### Attribution
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)
 
