@@ -130,6 +130,7 @@ To utilize `breadthFirst`, pass in a node of an instantiated graph.
 *example*: `breadthFirst(someGraphNode)`
 
 ### Attribution
+Alex White - Starter code, code review
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)
 
 

@@ -92,7 +92,7 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
     }
       return totalCost;
   }
-  public ArrayList breadthFirst(Vertex<T> gRoot){
+  public ArrayList<Vertex<T>> breadthFirst(Vertex<T> gRoot){
     HashSet<T> visited = new HashSet<>();
     ArrayList<Vertex<T>> result = new ArrayList<>();
     Queue<Vertex<T>> breadth = new Queue<>();
