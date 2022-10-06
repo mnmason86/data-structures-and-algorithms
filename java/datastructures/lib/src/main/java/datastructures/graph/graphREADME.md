@@ -105,7 +105,32 @@ connections between the given cities, a value greater than zero will be returned
 which reflects the total 'cost' of the trip between them.
 *example*: `businessTrip(someGraph, ["Nashville", "Atlanta"])`
 
+## Code Challenge 36
+
+### Challenge Description
+
+Implement a breadth-first traversal of a graph.
+
+### Methods
+
+`breadthFirst()` - Accepts a Graph node as an argument. Returns and displays a
+collection of nodes in the order they were visited.
+
+### Complexity
+
+**Time**: O(n) - Each vertex in the graph is visited to determine its neighbors
+and add each to the result list. This will give a complexity of O(vertices)
+ + O(edges), which simplifies to O(n).
+
+**Space**: O(n) - While several data structures are created in this
+implementation, they will only ever be as large as the maximum breadth of the graph.
+### Implementation
+
+To utilize `breadthFirst`, pass in a node of an instantiated graph.
+*example*: `breadthFirst(someGraphNode)`
+
 ### Attribution
+Alex White - Starter code, code review
 Ben Mills - [GitHub Repo](https://github.com/akkanben/data-structures-and-algorithms)
 
 

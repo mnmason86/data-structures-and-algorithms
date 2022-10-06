@@ -2,6 +2,10 @@ package datastructures.graph;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static datastructures.graph.Graph.businessTrip;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -112,5 +116,37 @@ public class GraphTest {
     assertTrue(businessTrip(sut, cities) == 85);
     assertTrue(businessTrip(sut, cities2) == 232);
     assertTrue(businessTrip(sut, cities3) == 0);
+  }
+  @Test
+    public void breadthFirstTest() {
+    Graph<Integer> sut = new Graph<>(7);
+    Vertex<Integer> vtx1 = sut.addVertex(1);
+    Vertex<Integer> vtx2 = sut.addVertex(2);
+    Vertex<Integer> vtx3 = sut.addVertex(3);
+    Vertex<Integer> vtx4 = sut.addVertex(4);
+    Vertex<Integer> vtx5 = sut.addVertex(5);
+    Vertex<Integer> vtx6 = sut.addVertex(6);
+    Vertex<Integer> vtx7 = sut.addVertex(7);
+    sut.addEdge(vtx1, vtx2, 0);
+    sut.addEdge(vtx1, vtx3, 0);
+    sut.addEdge(vtx2, vtx4, 0);
+    sut.addEdge(vtx2, vtx5, 0);
+    sut.addEdge(vtx3, vtx6, 0);
+    sut.addEdge(vtx3, vtx7, 0);
+
+    ArrayList<Integer> expected = new ArrayList<>();
+    expected.add(1);
+    expected.add(2);
+    expected.add(3);
+    expected.add(4);
+    expected.add(5);
+    expected.add(6);
+    expected.add(7);
+
+    ArrayList<Integer> result = new ArrayList<>();
+    for(Vertex<Integer> i : sut.breadthFirst(vtx1)){
+      result.add(i.value);
+    }
+    assertEquals(expected, result);
   }
 }
