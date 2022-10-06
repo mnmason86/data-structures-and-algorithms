@@ -5,8 +5,10 @@ import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
 import datastructures.linkedlist.Queue;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+import java.util.HashSet;
 import java.util.List;
 
 
@@ -89,6 +91,25 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
       }
     }
       return totalCost;
+  }
+  public ArrayList breadthFirst(Vertex<T> gRoot){
+    HashSet<T> visited = new HashSet<>();
+    ArrayList<Vertex<T>> result = new ArrayList<>();
+    Queue<Vertex<T>> breadth = new Queue<>();
+    visited.add(gRoot.value);
+    breadth.enqueue(gRoot);
+
+    while (!breadth.isEmpty()){
+      Vertex<T> front = breadth.dequeue();
+      result.add(front);
+      for (Edge<T> edge : getNeighbors(front)){
+        if (!visited.contains(edge.destination.value)){
+          breadth.enqueue(edge.destination);
+          visited.add(edge.destination.value);
+        }
+      }
+    }
+    return result;
   }
 
   @Override
